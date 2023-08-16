@@ -1,5 +1,7 @@
 package com.ali.leetcode;
 
+import java.util.Arrays;
+
 /**
  * @Description: two-sum 两数之和
  * @Author: 张黎 zliprogram@163.com 15972037154
@@ -15,9 +17,10 @@ package com.ali.leetcode;
 public class Exercise1 {
 
     public static void main(String[] args) {
-        int array [] = {1,3,6,8};
+        int array [] = {1,3,5,8};
         int target = 9;
-        twoSum(array,target);
+        int [] result = twoSum(array,target);
+        System.out.println(Arrays.toString(result));
     }
 
     public static int [] twoSum(int [] array,int target) {
